@@ -6,6 +6,31 @@
 
 <style>
 
+  .imgBox{
+position:relative;
+overflow:hidden;
+border-radius:10px;
+}
+
+.imgBox img{
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+display:block;
+}
+
+.imgBox span{
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+background:rgba(0,0,0,0.6);
+color:white;
+padding:8px;
+font-size:14px;
+text-align:center;
+}
+
 /* THEMES */
 :root{
 --bg:#f4f6f8;
@@ -166,9 +191,10 @@ color:#888;
 <div class="card">
 <h2>🛠 What We Do</h2>
 <div class="gallery">
-<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500">
-<p>Mobile Repairing</p>
+<div class="imgBox">
 <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500">
+<span>Laptop Repair</span>
+</div>
 <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?w=500">
 <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=500">
 </div>
@@ -294,4 +320,5 @@ renderAdmin();
 
 </body>
 </html>
+
 
